@@ -23,7 +23,7 @@ const muscles = [
         origin: "Púbis.",
         insertion: "Processo xifoide e cartilagens costais (5ª a 7ª).",
         innervation: "Nervos toracoabdominais.",
-        func: "Flexão do tronco,compressão do abdome e temsiona a parede abdomominal.",
+        func: "Flexão do tronco,compressão do abdome e tensiona a parede abdominal.",
         image: "3.jpg"
     },
     {
