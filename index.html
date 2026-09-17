@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Anatomia Muscular</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Quiz de Anatomia Muscular</h1>
+            <p id="progress">Questão 1 de 16</p>
+        </header>
+
+        <main id="quiz-container">
+            <div id="image-container">
+                <img id="muscle-image" src="" alt="Imagem do Músculo em destaque">
+            </div>
+            
+            <h2 id="question-text">Carregando pergunta...</h2>
+            
+            <div id="options-container">
+                <!-- Os botões das alternativas serão gerados via JavaScript -->
+            </div>
+            
+            <button id="next-btn" class="hidden">Próxima Questão</button>
+        </main>
+
+        <section id="result-container" class="hidden">
+            <h2>🎉 Quiz Concluído!</h2>
+            <p id="score-text">Você acertou 0 de 16 questões.</p>
+            <button id="restart-btn">Tentar Novamente</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

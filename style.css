@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: #ffffff;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 25px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 15px;
+}
+
+h1 {
+    color: #2b6cb0;
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+#progress {
+    color: #718096;
+    font-weight: 600;
+}
+
+#image-container img {
+    max-width: 100%;
+    height: auto;
+    max-height: 350px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    object-fit: cover;
+}
+
+#question-text {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #2d3748;
+}
+
+#options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.option-btn {
+    background-color: #edf2f7;
+    border: 2px solid #e2e8f0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #2d3748;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.option-btn:hover:not(:disabled) {
+    background-color: #e2e8f0;
+    border-color: #cbd5e0;
+}
+
+.option-btn:disabled {
+    cursor: not-allowed;
+}
+
+/* Classes de Feedback Visual */
+.correct {
+    background-color: #c6f6d5 !important;
+    border-color: #48bb78 !important;
+    color: #22543d !important;
+}
+
+.incorrect {
+    background-color: #fed7d7 !important;
+    border-color: #f56565 !important;
+    color: #742a2a !important;
+}
+
+/* Botões de Ação */
+#next-btn, #restart-btn {
+    background-color: #3182ce;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#next-btn:hover, #restart-btn:hover {
+    background-color: #2b6cb0;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Responsividade para Celular */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    #question-text {
+        font-size: 1.1rem;
+    }
+    .option-btn {
+        font-size: 0.95rem;
+        padding: 12px;
+    }
+}
